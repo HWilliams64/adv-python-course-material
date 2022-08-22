@@ -20,7 +20,7 @@ render dynamic HTML/CSS/JS web pages.
 - [Official Documentation on The Login Required Decorator](https://docs.djangoproject.com/en/3.0/topics/auth/default/#the-login-required-decorator)
 - [How to Work With HTML Cards](https://www.w3schools.com/howto/howto_css_cards.asp)
 - [Official Documentation of Django Forms](https://docs.djangoproject.com/en/3.0/topics/forms/)
-- [Official Documentation of Django Template URL's](https://docs.djangoproject.com/en/3.0/ref/templates/builtins/#url)
+- [Official Documentation of Django Template URLs](https://docs.djangoproject.com/en/3.0/ref/templates/builtins/#url)
 - [How to make an HTML button link](https://www.w3schools.com/html/html_links.asp)
   
 ## Watch:
