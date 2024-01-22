@@ -1,4 +1,6 @@
-# Python
+# Advanced Python
+
+![Python Logo](https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg)
 
 This repo contains course files for introductory Python courses. The files are
 organized in separate directories for each learning module.
@@ -12,66 +14,69 @@ The essential concepts of the python programming language.
 - Flow control with if/else statements
 - While loops and for loops
 
-## [Object Orientated Programming](./02_oop/)
+## [Polymorphism](./02_oop/)
 
-Represent real-world items as code known as objects.
+Building on the idea of object oriented programming we will learn about Polymorphism.
 
 - Creating our own classes
 - Using our own class to create an object
-- The difference between a method and a function
-- Creating getters and setters
-- Local/Instance variables
+- Inheritance
+- Functional overriding
 
-## [Text File IO](./03_text_file_io/)
+## [Multi-Threading and Multi-Processing](./03_sub_system/)
 
-Read and write text to files. Represent python objects and data structures as
-text using JSON.
+Discover concurrent programming with Multi-Threading and
+Multi-Processing. Explore threading, multi-processing, and platform-based
+operations using Python's packages, including subprocess functions like `run()`
+and `check_call()`.
 
-- Context manager
-- Reading a text file
-- What is JSON
-- Working with JSON in Python
+- Threading
+- Multi-processing
+- System Calls
 
-## [Exceptions](./04_exceptions/)
+## [Data Analytics](./04_data_analytics/)
 
-How to properly handle errors when they occur.
+Dive into data analytics basics with Python's NumPy, Pandas, Matplotlib, Scikit-Learn, and TensorFlow in this introductory module.
 
-- How to read to traceback
-- Handling exceptions with try-except
-- Cleaning up your code with a finally block
-- How to raise an exception
+- Explore data with use:
+  - NumPy
+  - Pandas
+  - Matplotlib
+  - Scikit-Learn
+  - TensorFlow
 
-## [Functional Arguments and Decorators](./05_args_and_decorators/)
+## [Decorators and Context Managers](./05_decorators_and_context_managers/)
 
-Modifying functional arguments with decorators and parameterization.
+Discover how to create yor own decorators and context managers.
 
-- Accepting an arbitrary number of arguments
-- Working with keyword arguments
-- Decorating a function
-- Create a decorator
+- Creating a decorator
+- Creating a simple context manager
+- Learning bout the `__enter__` and `__exit__` methods.
 
-## [HTTP and API](./07_http_and_api/)
+## [Web API](./06_web_api/)
 
-Communicate with other computers over the internet.
+Learn how to creating your own web API.
 
-- Connecting to websites using python
-- Application programming interfaces (API)
-- Connecting to other computers using APIs
+- Creating web routes and endpoints
+- Adding data validation to the endpoints
+- Adding API based authentication to the endpoints
+  - Authorization headers
+  - API tokens 
+  - OAuth Tokens
 
 ## [Django part 1](./07_django_part_1/)
 
-The basics of the Django framework, creating applications and database management.
+The basics of the Django framework, creating a web application and database management.
 
-- What is Django's
+- What is Django
 - Create a Django project
-- Creating different components in the project
-- Database management with models
+- Saving data
+- Creating views
 
 ## [Django part 2](./08_django_part_2/)
 
 The creating dynamic web pages with Django.
 
 - User authentication
-- Use views to render webpages
-- Working with Django's templating language to dynamically render HTML/CSS/JS
-- Accepting, validating, and cleaning data with forms
+- Connecting a Postgres SQL database running in docker container
+- Connecting a Redis database running in docker container
