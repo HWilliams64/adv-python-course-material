@@ -22,65 +22,71 @@ h5 {
 }
 </style>  
 
-# Object-Oriented (Polymorphism) Programming
+# Advanced Object-Oriented Programming Concepts
 
-Welcome to the Object-Oriented Programming in Python module! In this module, you'll delve into the world of objects, exploring their fundamental role in the world of Python programming. Objects, and the classes that define them, form the basis for a programming paradigm known as Object-Oriented Programming (OOP). We'll cover key topics like defining classes, creating methods, understanding the concept of getters and setters, and the use of local or instance variables.
+Welcome to the Advanced Object-Oriented Programming in Python module! This
+module is designed to take your understanding of Object-Oriented Programming
+(OOP) to the next level, focusing on more sophisticated aspects of working with
+classes and objects. You will explore advanced features of Python that enable
+powerful and flexible software design patterns. Topics such as the `@property`
+decorator for implementing getters, setters, and property management, along with
+polymorphism, method overriding, and inheritance, are covered in detail. 
 
 ## Module Topics:
-1. Understanding Objects and Classes:
-   - Understand the concept of an object in programming.
-   - Learn how classes define objects with a certain behavior and properties.
-   - Discover the power and flexibility of objects for creating complex programs.
-   - Practice creating classes and instantiating objects.
+1. **The @property Decorator**:
+   - Dive into the `@property` decorator to understand its role in defining
+     class properties that act like attributes. 
+   - Learn how to use getters and setters to manage object state in a controlled
+     manner, adhering to the principles of encapsulation. 
+   - Explore the concept of caching with `@cached_property` to optimize
+     performance for computationally expensive operations. 
 
-2. Methods vs Functions:
-   - Learn the difference between a method and a function.
-   - Understand how methods, as part of a class, can modify an object's state.
-   - Discover the use of the 'self' parameter in Python methods.
-   - Practice creating methods within classes to manipulate and interact with objects.
+2. **Polymorphism in Python**:
+   - Understand polymorphism and how it allows for flexibility in interface
+     design, letting different objects be used interchangeably. 
+   - Discover how polymorphism can be implemented through method overriding and
+     duck typing, enabling objects of different types to be processed with
+     common interface. 
 
-3. Getters and Setters:
-   - Understand the concept of getters and setters in object-oriented programming.
-   - Learn the importance of encapsulation, and how getters and setters contribute to it.
-   - Explore Python's property decorator to create getters and setters.
-   - Practice creating classes with getters and setters to safely manipulate object attributes.
+3. **Method Overriding and `super()`**:
+   - Learn the nuances of method overriding to alter or extend the behavior of
+     inherited methods in subclasses. 
+   - Use the `super()` function to call methods from a parent class within an
+     overridden method, providing a way to extend rather than replace
+     functionality. 
 
-4. Local and Instance Variables:
-   - Learn the difference between local and instance variables.
-   - Understand how instance variables allow data to be stored on a per-object basis.
-   - Discover the lifecycle of local variables and their scope.
-   - Practice using local and instance variables to build dynamic objects.
+4. **Inheritance in Depth**:
+   - Deepen your understanding of inheritance, a cornerstone of OOP that allows
+     classes to inherit attributes and methods from other classes. 
+   - Explore single inheritance, multiple inheritance, and the diamond problem,
+     along with best practices for designing and using class hierarchies. 
 
-5. Defining and Using Class Methods:
-   - Understand the purpose and syntax of methods within classes.
-   - Learn how to define and use methods to manipulate object state and behavior.
-   - Explore the role of the 'self' keyword in instance methods.
-   - Practice creating methods within classes to interact with and manipulate objects.
+5. **Functional Overriding**:
+   - Examine how Python supports functional overriding to modify or extend the
+     behavior of functions and methods, providing dynamic flexibility in object
+     behavior. 
 
-6. Polymorphism and inheritance:
-   - The act of extending on class with another parent class
-   - Functional overriding
+Throughout this module, practical exercises and programming challenges will help
+you apply these concepts in real-world scenarios. You will get hands-on
+experience with advanced OOP features, enhancing your ability to design and
+implement sophisticated software systems. 
 
-Throughout this module, you'll have the chance to consolidate your understanding through practical exercises and programming challenges. These activities will bolster your understanding of object-oriented programming and its various aspects. By the end of the module, you'll have the skills to define classes, create methods, understand the role of getters and setters, and use local and instance variables effectively.
+This journey will equip you with the knowledge to use advanced OOP features
+effectively, enabling you to write cleaner, more efficient, and reusable code.
+By mastering these concepts, you'll be well-prepared to tackle complex
+programming challenges and create versatile Python applications. 
 
-Remember to strive for clean and reusable code, and to challenge yourself by solving diverse programming problems using object-oriented principles. Developing a strong foundation in object-oriented programming will enhance your ability to create modular and efficient Python programs. Buckle up for an exciting journey into the world of object-oriented programming in Python!
-
+Embark on this advanced exploration of object-oriented programming in Python,
+and unlock new possibilities in your programming projects! 
 
 ## Notebooks
 
-[Classes and objects](./learn/01_classes_and_objects.ipynb)
+*Review the basic concepts of object programming in the [notebooks in the review folder](./learn/review/)*
 
-[Magic methods](./learn/02_magic_methods.ipynb)
+[Property Decorator](./learn/01_property_decorator.ipynb)
 
-[Access Modifiers](./learn/03_access_modifiers.ipynb)
+[Duck Typing and EAFP](./learn/02_duck_typing_eafp.md)
 
+[Function Overloading](./learn/03_function_overloading.md)
 
-## Reading Material
-
-[Slide discussing classes and objects](https://docs.google.com/presentation/d/1CL1a69P9C7DcliDA691aLY31s_lgNDAUraCU5z7L8Dc/edit?usp=sharing)
-
-[Classes](https://docs.python.org/3/tutorial/classes.html#classes)
-
-[Scopes and Namespaces](https://docs.python.org/3/tutorial/classes.html#python-scopes-and-namespaces)
-
-[Classes](https://docs.python.org/3/tutorial/classes.html#a-first-look-at-classes)
+[Inheritance](./learn/04_inheritance.ipynb)
