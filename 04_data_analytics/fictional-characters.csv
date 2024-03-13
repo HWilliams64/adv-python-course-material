@@ -1,0 +1,18 @@
+id,lastName,firstName,hometown,age,ability,planet
+1,Stark,Tony,Manhattan,48,6,Earth
+2,Romanoff,Natalia,Stalingrad,32,5,Earth
+3,Banner,Bruce,Dayton,49,5,Earth
+4,Danvers,Kara,Krypton,46,10,Krypton
+5,Kent,Clark,Krypton,27,10,Krypton
+6,Danvers,Carol,Boston,56,7,Earth
+7,Prince,Diana,Paradise Island,800,9,Earth
+8,Solo,Han,Corellia,66,4,Corellia
+9,Skywalker,Luke,Tatooine,53,5,Tatooine
+10,Skywalker,Anakin,ookoo,45,6,Tatooine
+11,Yoda,Minch,Dagobah,900,7,Dagobah
+12,Elessar,Argorn,Rivendall,87,3,Middle-Earth
+13,,Gandolf,Valinor,240000,10,Middle-Earth
+14,Parker,Petter,Manhattan,20,7,Earth
+15,Stephen,Strange,Philadelphia,42,7,Earth
+16,Wayne,Bruce,Gotham City,30,6,Earth
+16,Yoda,Minch,Coruscant,,10,
