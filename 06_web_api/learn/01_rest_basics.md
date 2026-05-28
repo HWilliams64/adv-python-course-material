@@ -3,9 +3,9 @@
 **Prerequisite**
 
 - Read and complete the material in the
-  [./06_web_api/learn/making_requests](adv-python-course-material/06_web_api/learn/making_requests)
-  directory. If you've taken my CSC-125 course you've already completed this
-  material.
+   [./06_web_api/learn/making_requests](adv-python-course-material/06_web_api/learn/making_requests)
+   directory. If you've taken my CSC-125 course you've already completed this
+   material.
 
 ## Introduction to Web APIs
 
@@ -15,12 +15,12 @@ A Web API (Application Programming Interface) is a set of rules and protocols th
 # Example of a simple API call in Python using the requests library
 import requests
 
-response = requests.get("https://api.example.com/data")
+response = requests.get("https://dogapi.dog/api/v2/facts")
 print(response.json())
 ```
 
 - **`import requests`**: Imports the Python requests library, which simplifies making HTTP requests.
-- **`response = requests.get("https://api.example.com/data")`**: Makes a GET request to the specified URL to retrieve data.
+- **`response = requests.get("https://dogapi.dog/api/v2/facts")`**: Makes a GET request to the specified URL to retrieve data.
 - **`print(response.json())`**: Prints the data returned by the API in JSON format, making it readable.
 
 ## Features and Advantages of Building APIs
@@ -62,26 +62,107 @@ HTTP defines a set of request methods, also known as "verbs", which indicate the
 
 HTTP headers are key-value pairs sent between the client and server with an HTTP
 request or response. They define the operating parameters of an HTTP transaction
-and include a wide variety of information: 
+and include a wide variety of information:
 
 - **Content-Type**: This header specifies the media type (also known as MIME type) of the resource or the data being sent in the request or response. It tells the server what kind of data is being sent and how it should be processed. For example, `Content-Type: application/json` indicates that the data being sent is in JSON format.
 - **Authorization**: Contains credentials for authenticating the client to the
-  server. It is often used when making requests that require user verification.
-  For example, `Authorization: Bearer <token>` is a common format where
-  `<token>` is a placeholder for the actual token used for authentication. 
+   server. It is often used when making requests that require user verification.
+   For example, `Authorization: Bearer <token>` is a common format where
+   `<token>` is a placeholder for the actual token used for authentication.
 - **Accept**: Specifies the media types that the client is willing to receive
-  from the server. This can be used to negotiate the content format between the
-  client and server. For example, `Accept: application/xml` tells the server
-  that the client prefers to receive XML data. 
+   from the server. This can be used to negotiate the content format between the
+   client and server. For example, `Accept: application/xml` tells the server
+   that the client prefers to receive XML data.
 - **User-Agent**: Contains a string that allows the client to pass information
-  about itself (client type, operating system, version, etc.) to the server.
-  This can influence the server’s response, tailoring it to different client
-  configurations. 
+   about itself (client type, operating system, version, etc.) to the server.
+   This can influence the server’s response, tailoring it to different client
+   configurations.
 
 These methods and headers form the backbone of HTTP communication, influencing
 how resources are requested and served on the Internet. Understanding and using
 them correctly is fundamental to developing efficient and secure web
 applications and APIs.
+
+#### HTTP Status Codes
+
+Every HTTP response includes a **status code** — a three-digit number that tells the client whether the request succeeded and, if not, why it failed. Status codes are grouped by their first digit:
+
+| Range | Category | Meaning |
+|-------|----------|---------|
+| 2xx | Success | The request was received and processed successfully |
+| 4xx | Client Error | The request was malformed or unauthorized — fix it on your end |
+| 5xx | Server Error | The server failed — not your fault |
+
+The most common codes you will encounter:
+
+| Code | Name | When you see it |
+|------|------|----------------|
+| **200** | OK | Standard success for GET requests |
+| **201** | Created | A new resource was successfully created (usually after POST) |
+| **400** | Bad Request | The request was malformed — check your parameters |
+| **401** | Unauthorized | Authentication is required but missing or invalid |
+| **403** | Forbidden | Authenticated but not permitted to access this resource |
+| **404** | Not Found | The URL does not exist on the server |
+| **422** | Unprocessable Entity | The request was well-formed but contained invalid values |
+| **500** | Internal Server Error | The server crashed — nothing you can fix |
+
+The `requests` library exposes the status code on every response object. The Dog Facts API returns `200` on a successful request:
+
+```py
+import requests
+
+response = requests.get("https://dogapi.dog/api/v2/facts")
+print(response.status_code)  # 200
+print(response.ok)            # True for any 200–299 code
+```
+
+Always check the status code before using the response data:
+
+```py
+import requests
+
+response = requests.get("https://dogapi.dog/api/v2/facts")
+
+if response.ok:
+    fact = response.json()["data"][0]["attributes"]["body"]
+    print(fact)
+else:
+    print(f"Request failed with status {response.status_code}")
+```
+
+#### Query Strings
+
+A **query string** passes extra parameters to a URL. It begins with `?` and uses `key=value` pairs. Multiple parameters are separated by `&`:
+
+```
+https://dogapi.dog/api/v2/facts?limit=3
+```
+
+The Dog Facts API accepts one query parameter on `GET /facts`:
+
+| Parameter | Type | Required | Default | Description |
+|-----------|------|----------|---------|-------------|
+| `limit` | integer | No | 1 | Number of facts to return (minimum 1, maximum 5) |
+
+Without `limit` the API returns one fact. Passing `limit=3` returns three.
+
+In Python, pass query parameters using the `params` argument — `requests` handles the URL encoding for you:
+
+```py
+import requests
+
+response = requests.get(
+    "https://dogapi.dog/api/v2/facts",
+    params={"limit": 3}
+)
+# Equivalent URL: https://dogapi.dog/api/v2/facts?limit=3
+
+if response.ok:
+    for fact in response.json()["data"]:
+        print(fact["attributes"]["body"])
+```
+
+Using `params=` is safer than building the URL string manually because `requests` handles special characters, spaces, and encoding automatically.
 
 ### How HTTP is used in REST
 
