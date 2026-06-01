@@ -39,11 +39,11 @@ and `check_call()`.
 Dive into data analytics basics with Python's NumPy, Pandas, Matplotlib, Scikit-Learn, and TensorFlow in this introductory module.
 
 - Explore data with use:
-  - NumPy
-  - Pandas
-  - Matplotlib
-  - Scikit-Learn
-  - TensorFlow
+   - NumPy
+   - Pandas
+   - Matplotlib
+   - Scikit-Learn
+   - TensorFlow
 
 ## [Decorators and Context Managers](./05_decorators_and_context_managers/)
 
@@ -60,9 +60,9 @@ Learn how to creating your own web API.
 - Creating web routes and endpoints
 - Adding data validation to the endpoints
 - Adding API based authentication to the endpoints
-  - Authorization headers
-  - API tokens 
-  - OAuth Tokens
+   - Authorization headers
+   - API tokens
+   - OAuth Tokens
 
 ## [Django part 1](./07_django_part_1/)
 
@@ -73,10 +73,9 @@ The basics of the Django framework, creating a web application and database mana
 - Saving data
 - Creating views
 
-## [Django part 2](./08_django_part_2/)
+## [AI in Programming](./08_django_part_2/)
 
-The creating dynamic web pages with Django.
+Learn how to program with AI
 
-- User authentication
-- Connecting a Postgres SQL database running in docker container
-- Connecting a Redis database running in docker container
+- Vibe Coding
+- Agents and Argentic programming

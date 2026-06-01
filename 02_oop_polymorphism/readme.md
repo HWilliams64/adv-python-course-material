@@ -85,8 +85,8 @@ and unlock new possibilities in your programming projects!
 
 [Property Decorator](./learn/01_property_decorator.ipynb)
 
-[Duck Typing and EAFP](./learn/02_duck_typing_eafp.md)
+[Duck Typing and EAFP](./learn/02_duck_typing_eafp.ipynb)
 
-[Function Overloading](./learn/03_function_overloading.md)
+[Function Overloading](./learn/03_function_overloading.ipynb)
 
 [Inheritance](./learn/04_inheritance.ipynb)
