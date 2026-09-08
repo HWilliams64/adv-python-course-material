@@ -1,0 +1,211 @@
+WEBVTT
+
+1
+00:00:03.190 --> 00:00:08.615
+Welcome to CSC-225, Advanced Python Programming,
+taught by Professor Harris
+
+2
+00:00:08.615 --> 00:00:11.390
+Williams at Bunker Hill Community College.
+
+3
+00:00:11.390 --> 00:00:15.065
+I'm glad you're here, and I'm excited to help you
+take your Python skills to the
+
+4
+00:00:15.065 --> 00:00:20.740
+next level. This course is fully online and
+asynchronous, so you can learn on your
+
+5
+00:00:20.740 --> 00:00:25.603
+own schedule. By the end, you'll be able to design
+and test Python programs that
+
+6
+00:00:25.603 --> 00:00:30.570
+solve practical problems, and analyze data and build
+web applications.
+
+7
+00:00:30.940 --> 00:00:32.715
+Here's what you'll learn along the way.
+
+8
+00:00:32.715 --> 00:00:34.502
+The course has seven modules.
+
+9
+00:00:34.502 --> 00:00:36.840
+Most modules run for two weeks.
+
+10
+00:00:36.840 --> 00:00:41.545
+The final module continues through December 18, when
+the course ends.
+
+11
+00:00:41.965 --> 00:00:46.240
+In Module 1, Data Structures, you'll choose and use
+lists, tuples, sets, and
+
+12
+00:00:46.240 --> 00:00:48.453
+dictionaries to organize your data.
+
+13
+00:00:48.453 --> 00:00:52.665
+Module 2, Advanced OOP and Polymorphism, builds on
+that.
+
+14
+00:00:52.665 --> 00:00:57.095
+You'll design reusable classes and use inheritance
+to share behavior.
+
+15
+00:00:57.615 --> 00:01:02.440
+In Module 3, Concurrency, you'll manage multiple
+tasks with threads, processes,
+
+16
+00:01:02.440 --> 00:01:07.765
+and subprocesses. Then Module 4, Data Analytics, is
+where you'll clean, analyze,
+
+17
+00:01:07.765 --> 00:01:10.970
+and visualize data with Python libraries.
+
+18
+00:01:11.315 --> 00:01:16.015
+Module 5, Decorators and Context Managers, teaches
+you to extend function behavior
+
+19
+00:01:16.015 --> 00:01:21.715
+and manage resources safely. In Module 6, Web APIs
+with FastAPI, you'll build web
+
+20
+00:01:21.715 --> 00:01:24.640
+services that validate requests and work with data.
+
+21
+00:01:24.640 --> 00:01:28.440
+And the course wraps up with Module 7, Django, where
+you'll build a browser-based
+
+22
+00:01:28.440 --> 00:01:31.270
+notes application backed by a database.
+
+23
+00:01:31.590 --> 00:01:33.515
+So, what does a typical module look like?
+
+24
+00:01:33.515 --> 00:01:36.690
+Start by reading and watching the Learning
+Materials, run the examples and
+
+25
+00:01:36.690 --> 00:01:39.240
+complete practice, then move on to the Deliverables.
+
+26
+00:01:39.240 --> 00:01:42.840
+Each module includes an assignment, and there's also
+a discussion in each module.
+
+27
+00:01:42.840 --> 00:01:47.015
+You can resubmit coding assignments as many times as
+you need through December 18.
+
+28
+00:01:47.015 --> 00:01:51.020
+At the end of the course, there's a Final Project
+that brings everything together.
+
+29
+00:01:51.365 --> 00:01:53.040
+Now let's look at where your work happens.
+
+30
+00:01:53.040 --> 00:01:57.040
+Everything lives in Canvas. Click Modules in the
+left-side menu to see each module
+
+31
+00:01:57.040 --> 00:02:00.440
+laid out. At the top of each module, you'll find
+your Learning Materials.
+
+32
+00:02:00.440 --> 00:02:03.815
+These include Jupyter notebooks in Grader Than
+Workspace, with a tutorial for
+
+33
+00:02:03.815 --> 00:02:06.390
+Django. There's nothing to install on your computer.
+
+34
+00:02:06.390 --> 00:02:09.252
+Below that, you'll see the Deliverables section with
+your assignment and
+
+35
+00:02:09.252 --> 00:02:14.903
+discussion. To access your coding workspace, click
+Grader Than in the Canvas menu.
+
+36
+00:02:14.903 --> 00:02:19.265
+This opens Grader Than Workspace, where you'll write
+and run your Python code.
+
+37
+00:02:19.265 --> 00:02:23.602
+For coding activities configured for automatic
+grading, the autograder can provide
+
+38
+00:02:23.602 --> 00:02:26.120
+feedback to guide your revisions.
+
+39
+00:02:26.490 --> 00:02:27.577
+Here are a few tips.
+
+40
+00:02:27.577 --> 00:02:29.340
+Stay on the two-week pace.
+
+41
+00:02:29.340 --> 00:02:32.678
+It keeps the material fresh and gives you time to
+ask questions.
+
+42
+00:02:32.678 --> 00:02:35.940
+Use the Question Board in Canvas whenever something
+comes up.
+
+43
+00:02:35.940 --> 00:02:38.553
+And remember, Professor Williams is here to help.
+
+44
+00:02:38.553 --> 00:02:42.195
+Book office hours through the link on the course
+home page.
+
+45
+00:02:42.540 --> 00:02:47.270
+You've got this. Welcome to Advanced Python
+Programming, and let's get started.
+
